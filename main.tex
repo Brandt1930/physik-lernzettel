@@ -1,0 +1,65 @@
+\documentclass[12pt,a4paper,titlepage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\title{Physik-Lernzettel}
+\author{Lars Funke et al.}
+\date{Stand: \today}
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\pagebreak
+	\section{Schwingungen}
+	\section{Wellen}
+		\subsection{Eigenschaften von Wellen}
+			\begin{itemize}
+				\item Ausbreitung einer Störung
+				\item Viele gekoppelte Oszillatoren
+				\item Zeitliche ($T$) und räumliche ($\lambda$) Periodizität
+				\item Punkte gleiche Phase bilden Wellenfront
+				\item Wellennormale gibt Ausbreitungsrichtung an
+			\end{itemize}
+		\subsection{Wellengleichung}
+			An der Stelle $x = 0$ gilt:\\
+			$ y(0,t) = \hat{y} \cdot sin(\omega t)$ \\\\
+			Für eine beliebige Stelle $x$ gilt:\\
+			$ y(x,t) = \hat{y} \cdot sin(2 \pi (\frac{t}{T} - \frac{x}{\lambda} )) $
+		\subsection{Schallwellen}
+			\begin{itemize}
+				\item Ausbreitungsgeschwindigtkeit $c$ vom Medium und der Temperatur abhängig
+				\item Longitudinalwellen
+				\item breiten sich dreidimensional aus
+			\end{itemize}
+			$c_{\mathrm{Luft}} \approx 340 \frac{m}{s} (\mathrm{bei}\ T = 20^{\circ}\mathrm{C})$\\
+			$c_{\mathrm{Luft}} \approx 332 \frac{m}{s} (\mathrm{bei}\ T = 0^{\circ}\mathrm{C})$\\
+			$c_{\mathrm{Wasser}} \approx 1485 \frac{m}{s} (\mathrm{bei}\ T = 20^{\circ}\mathrm{C})$\\
+			$c_{\mathrm{Wasser}} \approx 1404 \frac{m}{s} (\mathrm{bei}\ T = 0^{\circ}\mathrm{C})$
+		\subsection{Dopplereffekt}
+			\subsubsection{Feststehender Beobachter, bewegliche Schallquelle}
+				Annäherung: \\
+				$f' = \frac{c}{c-v}\cdot f$\\
+				Entfernung: \\
+				$f'' = \frac{c}{c+v}\cdot f$
+			\subsubsection{Beweglicher Beobachter, feststehende Schallquelle}
+				Annäherung: \\
+				$f' = \frac{c+v}{c}\cdot f$\\
+				Entfernung: \\
+				$f'' = \frac{c-v}{c}\cdot f$
+		\subsection{Huygensches Prinzip}
+			Jeder Punkt einer Wellenfront kann als Ausgangspunkt einer Elementarwelle (Kreis- bzw. Kugelwelle) angesehen werden, die sich mit gleicher Phasengeschwindigkeit und Frequenz wie die ursprüngliche Welle ausbreitet.
+		\subsection{Interferenz}
+			\begin{itemize}
+				\item Überlagerung (gleichfrequenter) Wellen
+				\item Auslenkung entsprecht vektorieller Summe der Einzelwellen
+			\end{itemize}
+			\subsection{Berechnung konstruktive/destruktive Interferenz}
+			$s:$ Abstand des betrachteten Punktes zum Erregerzentrum \\
+			$\Delta s = |s_1 - s_2|$ (Gangunterschied)\\
+			Wenn $\Delta s = n \lambda, n \in \mathbb{N}$: konstruktive Interferenz\\
+			Wenn $\Delta s = n \lambda + \frac{\lambda}{2} = (n+\frac{1}{2}) \lambda, n \in \mathbb{N}$: destruktive Interferenz\\\\
+			Phasenunterschied zweier Wellen mit Gangunterschied $\Delta s$:\\
+			$\phi = \frac{\Delta s}{\lambda} \cdot 2 \pi$
+\end{document}
