@@ -130,4 +130,38 @@
 				$$U = \varphi_B - \varphi_A$$
 			\subsubsection{Elektrische Energie}
 				$$\Delta E_{el.} = U \cdot Q$$
+	\section{Gedämpfte Schwingungen}
+		\subsection{k bestimmen}
+			\subsubsection{1. Variante}
+				\begin{itemize}
+					\item Wenn $I_0$  bestimmmt, lies I(t) zu einem beliebigen Zeitpunkt ab, und stelle nach k um. 
+					DGL aufstellen, mithilfe eines Spannungansatzes:
+					 $$ U_{C}+U_{L}+U_{R}=0 $$
+					\item Lösung des DGL ergibt:
+					$ \omega= \sqrt{\omega_{0}^2-k^2} $ wobei $ \omega_0 = \frac{1}{\sqrt{LC}}$
+					\item berechne R mit $ k = \frac{R}{2L} $
+					\end{itemize}
+			\subsubsection{2. Variante}
+				\begin{itemize}
+					\item Wenn $I_0$ nicht bekannt, lies die Stromstärke zweier benachbarter Maxima ab
+					$$ \frac{I(\frac{T}{4})}{I (T+\frac{T}{4})} = \frac{I_0\cdot\sin({\omega-\frac{T}{4}})\cdot e^{-k\cdot\frac{T}{4}}}{I_0\cdot\sin(\omega \cdot ( T+\frac{T}{4}))\cdot e^{-k(T+\frac{T}{4})}} $$
+					$$ \frac{e^{-k \cdot \frac{T}{4}}} {e^{-k(T+ \frac{T}{4})}} = e^{-k \frac{T}{4}+k(T+\frac{T}{4})} $$
+					$$ = \frac{e^{-k\frac{T}{4}+k \cdot T+ k \frac{T}{4}}}{e^{kt}} $$
+					$$ \rightarrow \ln (\frac{I (\frac{T}{4})}{I(\frac{T}{4}+I)} = k \cdot T $$
+					\Large $$  \Rightarrow k= \frac{1}{T} \cdot \ln(\frac{I(\frac{T}{4})}{I(\frac{T}{4}+T)}) $$  
+					\normalsize $$ \omega^2 = \frac{1}{LC} - k^2  $$
+					\Large $$ L = \frac{1}{L\cdot (\omega^2+k^2)}$$
+				\end{itemize}
+			\subsubsection{3. Variante}
+				\begin{itemize}
+					\item Zeichne die Einhüllende bzw. das Zeit-Amplituden-Diagramm
+					\item Lies die "Halbwertszeit" $t_\frac{1}{2}$ ab 
+					\item k ermitteln : $\frac{y_0}{2} = y_0 \cdot e^{-kt_\frac{1}{2}} \leftrightarrow \frac{1}{2}= e^{-kt_\frac{1}{2}} $$ 
+					\rightarrow $ \ln(\frac{1}{2}) = -k \cdot t_\frac{1}{2} $ \\
+					\large $$ \Rightarrow  k= \frac{\ln(2)}{t_\frac{1}{2}} $$
+				\end{itemize}
+			\subsubsection{4. Variante}
+				FIX ME 
+				
+		
 \end{document}
